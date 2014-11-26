@@ -1,7 +1,5 @@
-nodesrv
+## Nodesrv docker container
 =======
-
-Docker nodejs server
 
 #### Install Docker [Docker](http://docs.docker.com/installation/)
 
