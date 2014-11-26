@@ -27,6 +27,7 @@ RUN cd $workspace && \
     tar vfx $workspace/node* && \
     rm node*.gz && \
     cd node* 
+RUN adduser developer
 
 RUN cd $workspace/node* && \
 ./configure && \
@@ -36,4 +37,8 @@ npm install -g bower && \
 npm install -g gulp && \
 npm install -g forever && \
 npm install -g grunt && \
-npm install -g yo
+npm install -g yo && \
+npm install -g generator-angular
+
+
+
