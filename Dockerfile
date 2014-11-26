@@ -27,7 +27,6 @@ RUN cd $workspace && \
     tar vfx $workspace/node* && \
     rm node*.gz && \
     cd node* 
-RUN adduser developer
 
 RUN cd $workspace/node* && \
 ./configure && \
