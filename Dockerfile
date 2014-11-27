@@ -58,5 +58,7 @@ RUN git clone git://github.com/robbyrussell/oh-my-zsh.git /home/$user/.oh-my-zsh
     chown $user /home/$user/.zshrc && \
     chsh -s /bin/zsh
 
+EXPOSE  9000
+
 CMD /bin/zsh
 
