@@ -22,6 +22,7 @@ RUN apt-get update \
     ssh \
     wget \
     zsh \
+    nginx \
     && apt-get autoremove \
     && apt-get clean \
 
