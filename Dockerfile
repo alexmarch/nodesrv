@@ -54,6 +54,7 @@ RUN npm install -g bower && \
 #oh myzsh install
 RUN git clone git://github.com/robbyrussell/oh-my-zsh.git /home/$user/.oh-my-zsh && \
     cp /home/$user/.oh-my-zsh/templates/zshrc.zsh-template /home/$user/.zshrc && \
+    chown $user /home/$user/.oh-my-zsh && \
     chown $user /home/$user/.zshrc && \
     chsh -s /bin/zsh
 
